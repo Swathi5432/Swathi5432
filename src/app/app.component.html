@@ -1,0 +1,54 @@
+<!-- <app-navbar></app-navbar> -->
+
+        <div id="nav" #nav >
+            <mat-toolbar style="background-color:#d1a3c669" class="mat-elevation-z8">
+             <button mat-button (click)= "opened=!opened"><mat-icon>menu</mat-icon></button>
+            <div style="width: 150px;">
+             <mat-icon >apple</mat-icon><span [ngStyle]= "{'font-size':font? '20px':'1.5em'}" class="display-6">{{'language.heading' | translate}}</span>
+             <span [ngStyle]= "{'font-size':font? '13px':'20px'}" class="subname">{{'language.subheading' | translate}}</span>
+            </div> 
+             <div class="spacer"></div>
+        
+          <div [hidden]="hide"  style="background-color: transparent;">
+                 <select (change)="selectLanguage($event)" class="languagepicker">
+                    <option  value="en-UK">{{"language.english" | translate }}</option>
+                    <option  value="tel">{{"language.telugu" | translate }}</option>
+                    <option  value="hin">{{"language.hindi" | translate }}</option>
+                 
+                 </select>
+             <a mat-button routerLink="/"><mat-icon>home</mat-icon> {{'language.home' | translate}}</a>
+             <a mat-button routerLink="/services"><mat-icon>yardRounded</mat-icon>{{'language.Services' | translate}}</a>
+             <a mat-button routerLink="/aboutus"><mat-icon>group</mat-icon>{{'language.about-us' | translate}}</a>
+             <a mat-button routerLink="/contactus"><mat-icon>perm_phone_msg</mat-icon> {{'language.contact-us' | translate}}</a>
+             <a mat-button routerLink="/profile"><mat-icon>person2</mat-icon> {{'language.profile' | translate}}</a>
+             <a mat-button routerLink="/cart"><mat-icon>shopping_cart</mat-icon></a>
+          </div>
+             </mat-toolbar>
+             
+             <mat-sidenav-container >
+                 <mat-sidenav [(opened)]= "opened" mode= "side"  appSlide [resizableMinWidth]="15" role="navigation">
+                     <mat-nav-list >
+                         <a class="h1" routerLink="/" mat-list-item><mat-icon>home</mat-icon>{{'language.home' | translate}}</a>
+                         <a class="h1"routerLink="/services" mat-list-item><mat-icon>yardRounded</mat-icon>{{'language.Services' | translate}}</a>
+                         <a class="h1" routerLink="/aboutus"mat-list-item><mat-icon>group</mat-icon>{{'language.about-us' | translate}}</a>
+                         <a class="h1"routerLink="/contactus" mat-list-item><mat-icon>perm_phone_msg</mat-icon>{{'language.contact-us' | translate}}</a>
+                         <a class="h1"routerLink="/home" mat-list-item><mat-icon>volunteer_activism</mat-icon>{{'language.help' | translate}}</a>
+                                                            
+                     </mat-nav-list>
+                 </mat-sidenav>
+               
+                 <mat-sidenav-content role="main"  > 
+                     <button mat-mini-fab  (click)="scroll(target)" class="top sd"><mat-icon> south_icon</mat-icon></button>
+                     <div #target id="target">
+                          <!-- <app-main></app-main>  -->
+                        <router-outlet></router-outlet>
+                     </div>
+             
+             <button [ngStyle]="{'display':display? 'block':'none'}" mat-mini-fab (click)="scrollToTop(target)" #btn class="top sd to-top" ><mat-icon> north_icon</mat-icon></button>
+                 </mat-sidenav-content>
+             </mat-sidenav-container> 
+             <h1>{{title}}</h1>
+
+        </div> 
+         
+        

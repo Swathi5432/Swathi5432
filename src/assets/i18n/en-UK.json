@@ -1,0 +1,39 @@
+{
+    "language.english":"English",
+
+  "language.telugu":"Telugu",
+
+  "language.hindi":"Hindi",
+  "language.home":"Home",
+
+  "language.about-us":"About-us",
+
+  "language.Services":"Services",
+
+  "language.contact-us":"Contact-us",
+
+  "language.profile":"Profile",
+  "language.help":"help",
+  "language.next":"Next",
+  "language.n1":"Price :",
+  "language.heading":"Apple",
+  "language.subheading":"Store",
+  "language.pdf":"Download PDF",
+  "language.calculator":"CALCULATOR",
+   "language.num1":"Number1",
+   "language.num2":"Number2",
+   "language.res":"Result",
+   "language.sum":"Sum",
+   "language.sub":"Sub",
+   "language.mul":"Mul",
+   "language.div":"Div",
+   "language.sqrt":"Sqrt",
+   "language.kuhl":"Kuhl",
+   "language.jaa":"Jaa",
+   "language.sim":"sim",
+   "language.band":"Band",
+   "language.ho":"Ho",
+   "language.back":"Back"
+
+
+}

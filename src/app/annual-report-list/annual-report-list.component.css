@@ -1,0 +1,17 @@
+table{
+    border: 2px solid;
+}
+th,tr,td{
+    border: 2px solid;
+}
+.nav-link{
+    font-size: x-large;
+    padding-left: 2vw;
+    float: right;
+
+}
+span .nav-link{
+    display: inline;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}

@@ -1,0 +1,43 @@
+
+   
+<span><a routerLink="/add-product" routerLinkActive="active" class="nav-link" style="color: blue;">Add Product</a></span>
+
+<div style="display: block; width: 50%">
+    <canvas id="canvas" height="120px">{{ chart }}</canvas>
+  </div>
+  <hr>
+  <h2>Annual Report</h2>
+<table>
+    <thead>
+    <tr>
+        <!-- -->
+        <th>Sr.no</th>
+        <!-- <th>Product ID</th>  -->
+        <th>Product Name</th>
+        <th>Year</th>
+        <th>Balance</th>
+        <th>Income</th>
+        <th>Sales</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor ="let report of reports ; let i = index">
+    <!-- <td>{{report.id}}</td> -->
+    <td>{{i+1}}</td>
+    <!-- <td>{{report.id}}</td> -->
+    <td>{{report.product_name}}</td>
+    <td>{{report.year}}</td>
+    <td>{{report.balance}}</td>
+    <td>{{report.income}}</td>
+    <td>{{report.sales}}</td>
+    <td>
+        <button (click)="updateProduct(report.id)" class="btn btn-info">Update</button>
+        <button (click)="deleteProduct(report.id)" class="btn btn-danger" style="margin-left:10px">Delete</button>
+    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>{{total_balance}}</h1>

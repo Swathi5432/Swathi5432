@@ -1,0 +1,71 @@
+   <!-- <div class="card"> -->
+    <div class="card-header">{{'language.calculator'| translate}}</div>
+    <div class="card-body" id="card-container">
+        <div class="form-group d-flex flex-row" id="add1">
+            <input [(ngModel)]='num1'type="number" name="num1" class="form-control" id="tag1"><span>+</span>
+            <input [(ngModel)]='num2' type="number" name="num2" class="form-control"id="tag2">
+            <button class="btn btn-success" (click)="addition()">{{'language.sum'|translate}}</button>
+           <div class="container">{{res1}}</div>
+        </div>
+        <div class="form-group d-flex flex-row">
+            <input [(ngModel)]='num3'type="number" name="num1" class="form-control" id="tag3"><span>-</span>
+            <input [(ngModel)]='num4' type="number" name="num2" class="form-control"id="tag4">
+            <button class="btn btn-danger" (click)="sub()">{{'language.sub'|translate}}</button>
+           <div class="container">{{res2}}</div>
+        </div>
+        <div class="form-group d-flex flex-row">
+            <input [(ngModel)]='num5'type="number" name="num1" class="form-control"id="tag5"><span>*</span>
+            <input [(ngModel)]='num6' type="number" name="num2" class="form-control"id="tag6">
+            <button class="btn btn-warning" (click)="mul()">{{'language.mul'|translate}}</button>
+           <div class="container">{{res3}}</div>
+        </div>
+        <div class="form-group d-flex flex-row">
+            <input [(ngModel)]='num7'type="number" name="num1" class="form-control"id="tag7"><span>/</span>
+            <input [(ngModel)]='num8' type="number" name="num2" class="form-control"id="tag8">
+            <button class="btn btn-success" (click)="div()">{{'language.div'|translate}}</button>
+           <div class="container">{{res4}}</div>
+        </div>
+        <div class="form-group d-flex flex-row">
+            <input [(ngModel)]='num9'type="number" name="num1" class="form-control"id="tag9">
+            <button class="btn btn-success" (click)="sqrt()">{{'language.sqrt'|translate}}</button>
+           <div class="container">{{res5}}</div>
+        </div>
+
+    </div>
+
+   <!-- </div> -->
+   <form class="form container1" >
+    <div class="d-flex justify-content-center">
+    <!-- <form class="container1"> -->
+      <mat-slide-toggle  [(ngModel)]="isChecked1" (click)="disableFunctionality('kuhl')" [disabled]="enable1" name="1" required>{{'language.kuhl'| translate}} </mat-slide-toggle>
+      <mat-slide-toggle   [(ngModel)]="isChecked2" (click)="ja('ja')" [disabled]="enable2"  name="2" required>{{'language.jaa'| translate}}</mat-slide-toggle>
+    
+      <mat-slide-toggle  [(ngModel)]="isChecked3" (click)="sim1('sim')" [disabled]="enable3"  name="3" required>{{'language.sim'| translate}}</mat-slide-toggle>
+      <mat-slide-toggle  [(ngModel)]="isChecked4" (click)="sim2('simm')" [disabled]="enable4"  name="4" required>{{'language.sim'| translate}}</mat-slide-toggle>
+    <!-- </form> -->
+  </div>
+<br> 
+  <div class="d-flex justify-content-center">
+    <!-- <form class="container2">                         -->
+      <!-- <form #form2="ngForm" (ngSubmit)="onFormSubmit()"  ngNativeValidate> -->
+      <mat-slide-toggle  [(ngModel)]="isChecked5" (click)="band('band')" [disabled]="enable5" name="5" required >{{'language.band'| translate}}</mat-slide-toggle>
+      <mat-slide-toggle  [(ngModel)]="isChecked6" (click)="ho('ho')"[disabled]="enable6"  name="6" required>{{'language.ho'| translate}}</mat-slide-toggle>
+      
+      <mat-slide-toggle  [(ngModel)]="isChecked7" (click)="jaa('ja')" [disabled]="enable7" name="7" required>{{'language.jaa'| translate}}</mat-slide-toggle>
+      
+      <mat-slide-toggle  [(ngModel)]="isChecked8" (click)="sim3('sim')" [disabled]="enable8" name="8" required>{{'language.sim'| translate}}</mat-slide-toggle>
+
+      <mat-slide-toggle  [(ngModel)]="isChecked9" (click)="sim4('simm')" [disabled]="enable9" name="9" required >{{'language.sim'| translate}}</mat-slide-toggle>
+      <!-- </form> -->
+      <br><br>
+    </div>
+    
+    <div class=" row space">
+      <div class="col-md-6">
+      <button id="back" class="btn back" routerLink="/" [hidden]="display" type="submit">{{'language.back'| translate}}</button>
+      </div>
+        <div class="col-md-6 ">
+      <button id="next"  class="btn next" routerLink="/reports" style="float: right;" [disabled]="next">{{'language.next'| translate}}</button>
+        </div>
+    </div>
+  </form>

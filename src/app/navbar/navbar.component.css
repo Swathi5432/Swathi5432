@@ -1,0 +1,31 @@
+.spacer{
+
+    flex:  auto;
+
+}
+
+mat-sidenav-container{
+
+    height:calc( 205vh - 115vh);
+
+    }
+    a{
+        color:rgb(0, 0, 0)
+    }
+    button{
+        color:rgb(0, 0, 0)
+    }
+
+    mat-sidenav{
+
+        width:200px;
+        background-color: silver;
+       
+    }
+   
+    mat-sidenav-content{
+        background-size: cover;
+        
+       
+    }
+    

@@ -1,0 +1,61 @@
+<div class="body2">
+    <mat-toolbar style="background-color:silver" class="mat-elevation-z8">
+        <button mat-button (click)="opened=!opened">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <h3 style="color:black">
+            <mat-icon>apple</mat-icon>iPhone Store
+        </h3>
+        <div class="spacer"></div>
+        <div class="items">
+            <a mat-button routerLink="Home">
+                <mat-icon>home</mat-icon> Home
+            </a>
+            <a mat-button routerLink="Aboutus">
+                <mat-icon>group</mat-icon> Aboutus
+            </a>
+            <a mat-button routerLink="Contactus">
+                <mat-icon>phone</mat-icon> Contactus
+            </a>
+            <a mat-button routerLink="Profile">
+                <mat-icon>person2</mat-icon> Profile
+            </a>
+
+        </div>
+
+    </mat-toolbar>
+    <mat-sidenav-container>
+
+        <mat-sidenav [(opened)]="opened" mode="side" appSlide [resizableMinWidth]="10">
+
+            <mat-nav-list>
+
+                <a mat-list-item>Home</a>
+
+                <a mat-list-item>Contact Us</a>
+
+                <a mat-list-item>About Us</a>
+
+                <a mat-list-item>Help</a>
+
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+
+            <!-- <app-store></app-store> -->
+            <router-outlet></router-outlet>
+           
+         
+
+
+
+        </mat-sidenav-content>
+         
+    </mat-sidenav-container>
+
+</div>
+
+
+
+

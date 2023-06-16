@@ -1,0 +1,91 @@
+a{
+  background-color:transparent;
+    width: 150px;
+    margin-bottom: 5px;
+}
+.spacer{
+    flex:  auto;
+}
+mat-sidenav-container{
+    height:calc( 205vh - 115vh); 
+    
+}
+.mat-elevation-z8{
+    /* background-image:url("src\assets\images\bg.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+ mat-sidenav{
+        width:200px;
+        /* background-image: url("src\assets\images\bg.jpg"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+      background-color:transparent;
+}
+mat-sidenav-content{
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body2{
+        height:5500px;
+ }
+ .display-6{
+    font-weight: bolder;
+    color: rgb(245, 66, 66);
+    font-family: "Rockwell";
+   
+}
+.telheader{
+  font-size: 20px;
+}
+ .subname{
+    margin-top:10px;
+    font-weight: bolder;
+    color: rgb(245, 66, 66);
+    font-family: "Rockwell";
+ }
+ [mat-button]:not(:hover) {
+  color: rgb(245, 66, 66);
+}
+ [mat-button]:hover {
+    color:chocolate;
+  }
+  /* .h1{
+    font-weight:bolder;
+    font-size:21px;
+    font-family: "Rockwell";
+  } */
+  [mat-list-item]:not(:hover) {
+    color: rgb(245, 66, 66);
+  }
+  [mat-list-item]:hover {
+    color:chocolate;
+
+  }
+
+    .sd{
+      float: right;
+    }
+   
+    .mat-mini-fab {
+      background-color: rgb(125, 16, 16);
+    }
+    .to-top {
+      bottom: 0;
+      cursor: pointer;
+      margin: 0 8px 12px 0;
+      position: fixed;
+      right: 0;
+    }
+  
+  .languagepicker{
+    color: rgb(245, 66, 66);
+    background-color: transparent;
+    border:0px;
+    margin-top: 1px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "Rockwell";
+  }

@@ -1,0 +1,196 @@
+<div class="next">
+    <a mat-button routerLink="/calculator" style="color:black;"> Next</a>
+</div>
+<div><button (click)="scroll(target)" class="top"><span>↓</span></button></div>
+<div id="div1" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick" [@flipState]="fliping">
+
+            <img src="assets\images\apple-iphone-14-pro-max-front.jpg" class="tp-box__side tp-box__front "
+                alt="can't load" (click)="flip()">
+
+            <img src="assets\images\iphone-14-pro-max-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action('Rs 1,80,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick" style="margin-top:20px">
+
+        <h2 class="action">{{name}}</h2>
+
+    </div>
+</div>
+<div id="div2" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick1" [@flipState]="fliping1">
+
+            <img src="assets\images\iphone-14-pro-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip1()">
+
+            <img src="assets\images\iphone-14-pro-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action1('Rs 1,70,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick1" style="margin-top:20px">
+
+        <h2 class="action">{{name1}}</h2>
+
+    </div>
+</div>
+<div id="div3" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick2" [@flipState]="fliping2">
+
+            <img src="assets/images/iphone-14-plus.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip2()">
+
+            <img src="assets/images/iphone-14-plus-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action2('Rs 1,60,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick2" style="margin-top:20px" style="margin-top:20px">
+
+        <h2 class="action">{{name2}}</h2>
+
+    </div>
+</div>
+
+<div id="div4" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick3" [@flipState]="fliping3">
+
+            <img src="assets/images/iphone-13-pro-max-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip3()">
+
+            <img src="assets/images/iphone-13 -pro-max-side.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action3('Rs 1,50,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick3" style="margin-top:20px">
+
+        <h2 class="action">{{name3}}</h2>
+
+    </div>
+</div>
+<div id="div5" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick4" [@flipState]="fliping4">
+
+            <img src="assets/images/iphone-13-pro-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip4()">
+
+            <img src="assets/images/iphone--13-pro-side.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action4('Rs 1,70,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick4" style="margin-top:20px">
+
+        <h2 class="action">{{name4}}</h2>
+
+    </div>
+</div>
+<div id="div6" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick5" [@flipState]="fliping5">
+
+            <img src="assets/images/iphone-13-mini-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip5()">
+
+            <img src="assets/images/iphone-13-mini-side.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action5('Rs 1,60,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick5" style="margin-top:20px">
+
+        <h2 class="action">{{name5}}</h2>
+
+    </div>
+</div>
+
+<div id="div7" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick6" [@flipState]="fliping6">
+
+            <img src="assets/images/iphone-12-pro-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip6()">
+
+            <img src="assets/images/iphone-12-pro-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action6('Rs 1,50,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick6" style="margin-top:20px">
+
+        <h2 class="action">{{name6}}</h2>
+
+    </div>
+</div>
+<div id="div8" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick7" [@flipState]="fliping7">
+
+            <img src="assets/images/iphone-12-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip7()">
+
+            <img src="assets/images/iphone-12-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action7('Rs 1,70,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick7" style="margin-top:20px">
+
+        <h2 class="action">{{name7}}</h2>
+
+    </div>
+</div>
+<div id="div9" class="division">
+    <div class="col-md-3">
+
+        <div class="tp-box" *ngIf="isclick8" [@flipState]="fliping8">
+
+            <img src="assets/images/iphone-11-front.jpg" class="tp-box__side tp-box__front " alt="can't load"
+                (click)="flip8()">
+
+            <img src="assets/images/iphone-11-back.jpg" class="tp-box__side tp-box__back" alt="can't load"
+                (click)="action8('Rs 1,60,000')">
+        </div>
+
+    </div>
+
+    <div [hidden]="onclick8" style="margin-top:20px">
+
+        <h2 class="action">{{name8}}</h2>
+
+    </div>
+</div>
+<button (click)="scroll(target)" class="hide" style="margin-top:1000px; visibility:hidden;">Click Me</button>
+<!-- <button class="btn btn-primary" value="Convert" (click)="convertToPDF()">pdf</button> -->
+
+
+<div #target>
+
+
+
+
+</div>

@@ -1,0 +1,94 @@
+<a routerLink="/reports" routerLinkActive="active" class="nav-link">Report List</a>
+
+<h2>Add Product</h2>
+
+<form [formGroup]="graphTableForm">
+    <div class="form-group">
+        <label for="product">Product Name</label>
+        <input formControlName="product_name" type="text" class="form-control" id="productName"
+            [(ngModel)]="report.product_name" required>
+        <mat-error class="text-danger"
+            *ngIf="graphTableForm.controls['product_name'].errors?.['required'] && (graphTableForm.controls['product_name'].touched)">
+            *Product name required.
+        </mat-error>
+       
+        <mat-error class="text-danger"
+            *ngIf=" graphTableForm.controls['product_name'].dirty && graphTableForm.hasError('pattern','product_name')">
+            *It Should Contains Numbers , Alphabets and Underscore Only
+        </mat-error>
+        <mat-error class="text-danger"
+        *ngIf="graphTableForm.hasError('minlength','product_name') && graphTableForm.controls['product_name'].dirty">
+        *Please Enter atleast 4 letters </mat-error>
+    </div>
+
+    <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" formControlName="year" class="form-control" id="year" [(ngModel)]="report.year" name="year"
+            required>
+        <mat-error class="text-danger"
+            *ngIf="graphTableForm.controls['year'].errors?.['required'] && (graphTableForm.controls['year'].touched)">
+            *Year required .</mat-error>
+            <div class="text-danger"
+                *ngIf="graphTableForm.hasError('minlength','year') && graphTableForm.controls['year'].dirty">
+                *Year Invalid . It Should contain only four digit number
+            </div>
+            <div class="text-danger"
+            *ngIf="graphTableForm.hasError('maxlength','year') && graphTableForm.controls['year'].dirty">
+            *Year Invalid . It Should contain only four digit number
+        </div>
+            <div class="text-danger"
+                *ngIf="graphTableForm.controls['year'].dirty && graphTableForm.hasError('pattern','year')">
+                * It should contains only numbers
+            </div>
+
+    </div>
+    <div class="form-group">
+        <label>Balance</label>
+        <input formControlName="balance" type="text" class="form-control" id="balance" [(ngModel)]="report.balance"
+            name="balance" required>
+        <div class="text-danger"
+            *ngIf="graphTableForm.controls['balance'].errors ?.['required']  && (graphTableForm.controls['balance'].touched)">
+            *Balance required.  </div>
+            <div class="text-danger"
+                *ngIf="graphTableForm.hasError('pattern','balance') && (graphTableForm.controls['balance'].dirty)">
+                *Balance Invalid... Enter Numbers Only
+            </div>
+      
+    </div>
+    <div class="form-group">
+        <label>Income</label>
+        <input formControlName="income" type="text" class="form-control" id="income" [(ngModel)]="report.income"
+            name="income" required>
+        <div class="text-danger"
+            *ngIf="graphTableForm.controls['income'].errors ?.['required'] && (graphTableForm.controls['income'].touched)">
+
+            *Income required.  </div>
+
+            <div class="text-danger"
+                *ngIf="graphTableForm.hasError('pattern','income') &&  (graphTableForm.controls['income'].dirty)">
+                *Income Invalid... Enter Numbers Only
+            </div>
+       
+    </div>
+    <div class="form-group">
+        <label>Sales</label>
+        <input type="text" formControlName="sales" class="form-control" id="sales" [(ngModel)]="report.sales"
+            name="sales" required>
+        <div class="text-danger"
+            *ngIf="graphTableForm.controls['sales'].errors ?.['required']&& (graphTableForm.controls['sales'].touched)">
+
+            *Income required.  </div>
+
+            <div class="text-danger"
+                *ngIf="graphTableForm.hasError('pattern','sales') &&  (graphTableForm.controls['sales'].dirty)">
+                *Income Invalid... Enter Numbers Only
+            </div>
+        
+    </div>
+
+    <button class="btn btn-success m-2" type="submit" (click)="onSubmit()" >Submit</button>
+
+</form>
+<p *ngIf="isValidFormSubmitted " [ngClass]="'success'">
+    Form submitted successfully.
+</p>

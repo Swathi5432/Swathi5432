@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html>
+<head></head>
+<body> -->
+<div class="container" #main id="main">
+  
+    <br>
+    <div class=" row flex-row-reverse" style="margin-bottom: -30px;margin-right:5px;">
+        <button style="font-size:14px ;" type="button" routerLink="/calculator" mat-fab>{{ "language.next" | translate }}</button>
+    </div>
+    <div class=" row justify-content-center">
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping1">
+                 <img src="assets\images\apple-iphone-14-pro-max-front.jpg"
+                  class="tp-box__side tp-box__front " alt="can't load"(click)="flip1()"   >
+                 <img src="assets\images\iphone-14-pro-max-back.jpg"
+                 class="tp-box__side tp-box__back " alt="can't load" (click)="action1('Rs 1,80,000')">
+                 
+            </div>
+            
+            <div [hidden]="onclick1">
+                <h2 class="action">{{'language.n1'| translate}}{{name1}}</h2>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping2">
+            <img src="assets\images\iphone-14-pro-front.jpg" 
+              class="tp-box__side tp-box__front " alt="can't load" (click)="flip2()"   >
+              <img src="assets\images\iphone-14-pro-back.jpg"
+              class="tp-box__side tp-box__back " alt="can't load" (click)="action2('Rs 1,70,000')">
+            </div>
+            <div [hidden]="onclick2">
+                <h2 class="action">{{'language.n1'| translate}}{{name2}}</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping3">
+            <img src="assets\images\iphone-14-plus.jpg"   
+               class="tp-box__side tp-box__front " alt="can't load"(click)="flip3()"   >  
+               <img src="assets/images/iphone-14-plus-back.jpg" 
+               class="tp-box__side tp-box__back " alt="can't load" (click)="action3('Rs 1,60,000')">
+            </div>
+            <div [hidden]="onclick3">
+                <h2 class="action">{{'language.n1'| translate}}{{name3}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class=" row justify-content-center">
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping4">
+            <img src="assets/images/iphone-13-pro-max-front.jpg"
+            class="tp-box__side tp-box__front " alt="can't load"(click)="flip4()">
+            <img src="assets/images/iphone-13 -pro-max-side.jpg"
+            class="tp-box__side tp-box__back " alt="can't load" (click)="action4('Rs 1,50,000')">
+        </div>
+        <div [hidden]="onclick4">
+            <h2 class="action">{{'language.n1'| translate}}{{name4}}</h2>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping5">
+            <img src="assets/images/iphone-13-pro-front.jpg" 
+             class="tp-box__side tp-box__front " alt="can't load"(click)="flip5()" >
+             <img src="assets/images/iphone--13-pro-side.jpg"
+             class="tp-box__side tp-box__back " alt="can't load" (click)="action5('Rs 1,70,000')">
+            </div>
+            <div [hidden]="onclick5">
+                <h2 class="action">{{'language.n1'| translate}}{{name5}}</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping6">
+            <img src="assets/images/iphone-13-mini-front.jpg"  
+            class="tp-box__side tp-box__front " alt="can't load"(click)="flip6()"   >  
+            <img src="assets/images/iphone-13-mini-side.jpg"
+            class="tp-box__side tp-box__back " alt="can't load" (click)="action6('Rs 1,60,000')">
+        </div>
+        <div [hidden]="onclick6">
+            <h2 class="action">{{'language.n1'| translate}}{{name6}}</h2>
+        </div>
+        </div>
+    </div>
+    <div class=" row justify-content-center">
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping7">
+            <img src="assets/images/iphone-12-pro-front.jpg" 
+            class="tp-box__side tp-box__front " alt="can't load"(click)="flip7()">
+            <img src="assets/images/iphone-12-pro-back.jpg"
+            class="tp-box__side tp-box__back " alt="can't load" (click)="action7('Rs 1,50,000')">
+        </div>
+        <div [hidden]="onclick7">
+            <h2 class="action">{{'language.n1'| translate}}{{name7}}</h2>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping8">
+            <img src="assets/images/iphone-12-front.jpg"  
+            class="tp-box__side tp-box__front " alt="can't load"(click)="flip8()">
+            <img src="assets/images/iphone-12-back.jpg"
+            class="tp-box__side tp-box__back " alt="can't load" (click)="action8('Rs 1,70,000')">
+        </div>
+        <div [hidden]="onclick8">
+            <h2 class="action">{{'language.n1'| translate}}{{name8}}</h2>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="tp-box" *ngIf="isclick" [@flipState]="fliping9">
+            <img src="assets/images/iphone-11-front.jpg"  
+            class="tp-box__side tp-box__front " alt="can't load"(click)="flip9()">
+            <img src="assets/images/iphone-11-back.jpg"
+            class="tp-box__side tp-box__back " alt="can't load" (click)="action9('Rs 1,60,000')"> 
+        </div> 
+        <div [hidden]="onclick9">
+            <h2 class="action">{{'language.n1'| translate}}{{name9}}</h2>
+        </div>
+        </div>
+    </div>  
+
+        <button class="btn btn-primary" value="Convert" (click)="convertToPDF()">{{'language.pdf'|translate}}</button>
+        
+</div>
+
+
+

@@ -1,0 +1,92 @@
+button{
+    margin-top: 5px;
+    /* padding: px; */
+}
+.container{
+    color: red;
+    padding: 5px;
+    margin: 15px;
+    font-size: 26px;
+}
+#add1{
+    margin: 5px;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+}
+#tag1{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    /* height: 12px; */
+}
+#tag2{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#tag3{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#tag4{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#tag5{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#tag6{
+    
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#tag7{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#tag8{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#tag9{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+
+}
+#card-container{
+    background-color: rgb(192 120 120 / 37%);
+    text-align: center;
+    justify-content: center;
+}
+.card-header{
+    text-align: center;
+color: rgb(245, 66, 66);
+font-size:x-large;
+font-weight: bolder;
+/* padding-left: 40vw; */
+padding-top: 5vh;
+padding-bottom: 5vh;
+}
+.form{
+    padding-top: 5vh;
+}
+/* .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #fb837b;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: rgb(250, 50, 50);;
+} */
